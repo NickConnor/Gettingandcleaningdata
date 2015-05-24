@@ -63,7 +63,10 @@ compiled <- cbind(x_data, y_data, subject_data)
 ## Create an independent tidy data set with the average of each variable
 averages_of_data <- ddply(compiled, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
+melted <- melt(averages_of_data, id=c("subject", "activity"))
+tidy<-dcast(melted, subject + activity ~ variable, mean)
+
 ## writing the table, in text format
-write.table(averages_of_data, "averages_of_data.txt", row.name=FALSE)
+write.table(tidy, "averages_of_data.txt", row.name=FALSE)
 message("File completed, find 'averages_of_data.txt' file in your working directory")
 

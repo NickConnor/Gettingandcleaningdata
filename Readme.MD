@@ -28,3 +28,42 @@
 - using the powerful "ddply" command I then split data frame, apply function (means), and return results in a new data frame named averages_of_data
 - to further ensure clarity (or try to) i've melted and recast this set into a tidy set.
 - Write the file and return a confirmation message. 
+
+## Codebook
+
+Labels:
+body_acc_mean
+the mean of the body accelorometer observations
+
+body_gyro_mean
+the mean of the body gyroscope observations
+
+total_acc_mean
+the mean of the total accelorometer observations
+
+body_acc_sd
+the standard deviation of the body accelorometer observations
+
+body_gyro_sd
+the standard deviation of the body gyroscope observations
+
+total_acc_sd
+the standard deviation of the total accelorometer observations
+
+subject_x_mean
+the mean of the body accelorometer observations
+
+subject_y_mean
+the mean of the body gyroscope observations
+
+subject_z_mean
+the mean of the total accelorometer observations
+
+subject_x_sd
+the standard deviation of the body accelorometer observations
+
+subject_y_sd
+the standard deviation of the body gyroscope observations
+
+subject_z_sd
+the standard deviation of the total accelorometer observations
